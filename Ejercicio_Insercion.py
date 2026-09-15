@@ -1,8 +1,9 @@
 def Ordenamiento_Insercion(carril):
     for brazo in range(1, len(carril)):
-        moneda = carril[brazo]
-        while moneda > 0 and carril[brazo - 1] > moneda:
-            carril[brazo],carril[brazo - 1] = carril[brazo - 1],carril[brazo]   
+        moneda = brazo
+        while moneda > 0 and carril[moneda - 1] > carril[moneda]:
+            carril[moneda],carril[moneda- 1] = carril[moneda - 1],carril[moneda]
+            moneda -= 1
     return carril
 
 monedas = [2, 8, 5, 3, 9, 4, 1]
