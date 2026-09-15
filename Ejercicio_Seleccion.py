@@ -8,9 +8,9 @@ def Ordenamiento_Seleccion(array):
         if(iMin != i):
             Cambiar_Valores(array, i, iMin)
 
-def Cambiar_Valores(array, j, iMin):
-    aux = array[j]
-    array[j] = array[iMin]
+def Cambiar_Valores(array, i, iMin):
+    aux = array[i]
+    array[i] = array[iMin]
     array[iMin] = aux
     
 array = [2, 8, 5, 3, 9, 4, 1]
